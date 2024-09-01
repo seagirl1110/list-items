@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 function ListItems() {
   const [items, setItems] = useState([]);
@@ -11,6 +11,10 @@ function ListItems() {
       setInputValue('');
     }
   }
+
+  useEffect(() => {
+    console.log('Компонент ListItems обновлен');
+  }, [items]);
 
   return (
     <div>
