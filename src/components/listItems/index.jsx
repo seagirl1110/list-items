@@ -14,7 +14,7 @@ function ListItems() {
 
   useEffect(() => {
     console.log('Компонент ListItems обновлен');
-  }, [items]);
+  }, []);
 
   return (
     <div>
